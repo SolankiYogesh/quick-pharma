@@ -1,6 +1,18 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --color-pharma-50: #f0f9f9;
+  --color-pharma-100: #d9f2f2;
+  --color-pharma-200: #b7e4e5;
+  --color-pharma-300: #86cfd2;
+  --color-pharma-400: #4eb1b6;
+  --color-pharma-500: #34959a;
+  --color-pharma-600: #2a787d;
+  --color-pharma-700: #256266;
+  --color-pharma-800: #235053;
+  --color-pharma-900: #214447;
+  --color-pharma-950: #0e282a;
+}
 
 @layer base {
   body {
@@ -24,10 +36,6 @@
   
   .section-title {
     @apply text-3xl md:text-5xl font-bold tracking-tight text-slate-900;
-  }
-  
-  .text-glow {
-    text-shadow: 0 0 20px rgba(52, 149, 154, 0.3);
   }
 }
 

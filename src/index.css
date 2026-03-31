@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900 antialiased overflow-x-hidden;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-white/70 backdrop-blur-md border border-white/20;
+  }
+  
+  .btn-primary {
+    @apply bg-pharma-600 text-white px-6 py-3 rounded-full font-semibold transition-all hover:bg-pharma-700 active:scale-95 shadow-lg shadow-pharma-200 hover:shadow-pharma-300;
+  }
+  
+  .btn-secondary {
+    @apply bg-white text-pharma-700 px-6 py-3 rounded-full font-semibold transition-all hover:bg-pharma-50 active:scale-95 border border-pharma-100 shadow-sm;
+  }
+  
+  .section-title {
+    @apply text-3xl md:text-5xl font-bold tracking-tight text-slate-900;
+  }
+  
+  .text-glow {
+    text-shadow: 0 0 20px rgba(52, 149, 154, 0.3);
+  }
+}
+
+.gradient-bg {
+  background: radial-gradient(circle at 10% 20%, rgba(52, 149, 154, 0.05) 0%, transparent 40%),
+              radial-gradient(circle at 90% 80%, rgba(52, 149, 154, 0.05) 0%, transparent 40%);
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, #f0fdfa 0%, #ffffff 100%);
+}
